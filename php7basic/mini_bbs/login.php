@@ -1,10 +1,12 @@
 <?php
 session_start();
+//データベース接続
  require('dbconnect.php');
-
+//クッキーに保存
  if($_COOKIE['email']!==''){
    $email =$_COOKIE['email'];
  }
+ //ログイン処理
 if(!empty($_POST)){
   $email =$_POST['email'];
   if($_POST['email'] !=='' && $_POST['password'] !== ''){
