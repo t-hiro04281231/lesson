@@ -1,5 +1,6 @@
 <?php
 session_start();
+//データベース接続
 require('dbconnect.php');
 
 if(isset($_SESSION['id'])){
